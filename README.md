@@ -65,7 +65,7 @@ end
 TestWorkflow.new(state_object)
 ```
 
-##Implementing State
+## Implementing State
 
 Decision trees are intended to be instantiated many times, but in order to
 preserve idempotence, there needs to be an object to hold the state between
@@ -92,7 +92,7 @@ class Change < ActiveRecord::Base
 end
 ```
 
-##Finishing the Workflow
+## Finishing the Workflow
 When a workflow has been completed, and you don't want it to evaluate again, you can call `finish!` on the workflow.
 
 ```ruby
